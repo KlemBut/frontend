@@ -1,6 +1,7 @@
 @import url("http://fonts.cdnfonts.com/css/gadugi");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Noto+Sans&display=swap");
 @import url("https://www.dafontfree.net/data/1/s/1195/design.jasonwalcott.Scriptorama Markdown JF.ttf");
+@import-normalize;
 @font-face {
   font-family: "scriptoramamarkdownjfregular";
   src: url("./assets/fonts/scriptorama_markdown_jf_regular-webfont.woff2") format("woff2"), url("./assets/fonts/scriptorama_markdown_jf_regular-webfont.woff") format("woff");
@@ -31,6 +32,7 @@
   align-items: center;
   min-width: 375px;
   height: 56px;
+  border-bottom: 1px solid #1F343E;
 }
 .navbarWrapper ul {
   list-style: none;
@@ -41,7 +43,7 @@
   top: 5px;
   padding: 0;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
 }
 .navbarWrapper ul li {
   margin-left: 16px;
@@ -49,7 +51,7 @@
 .navbarWrapper ul li a {
   font-family: "Gadugi", sans-serif;
   text-decoration: none;
-  color: #1f343e;
+  color: #1F343E;
 }
 .navbarWrapper ul li a:hover {
   color: #4eb3e3;
@@ -70,7 +72,7 @@
 .hamburger .burger {
   width: 2rem;
   height: 0.25rem;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 10px;
   background-color: #bdc1c3;
   transform-origin: 3px;
@@ -84,7 +86,7 @@
   justify-content: center;
   margin: 32px auto auto auto;
   background: #f8f4f9 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 16px;
   opacity: 1;
   padding: 32px 16px;
@@ -93,7 +95,7 @@
   text-align: left;
   font: normal normal normal 32px/48px Caveat Brush;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   text-transform: uppercase;
   opacity: 1;
   margin: 0;
@@ -105,7 +107,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
   margin: 0;
 }
@@ -113,22 +115,22 @@
   display: flex;
   flex-direction: column;
 }
-.referalWrapper .emailInputWrapper label {
-  position: relative;
-}
-.referalWrapper .emailInputWrapper label input {
+.referalWrapper .emailInputWrapper input {
   text-align: left;
   font: normal normal normal 16px/20px Noto Sans;
   letter-spacing: 0px;
   color: #6d7a80;
   opacity: 1;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 8px;
   height: 56px;
   opacity: 1;
   padding-left: 48px;
   width: 100%;
+}
+.referalWrapper .emailInputWrapper label {
+  position: relative;
 }
 .referalWrapper .emailInputWrapper label::before {
   content: "";
@@ -141,7 +143,7 @@
 }
 .referalWrapper .emailInputWrapper button {
   background: #4eb3e3 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 8px;
   opacity: 1;
   height: 56px;
@@ -154,16 +156,24 @@
   margin-bottom: 71px;
 }
 .referalWrapper .emailInputWrapper span {
-  display: none;
   text-align: left;
   font: normal normal bold 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
 }
-.referalWrapper .emailInputWrapper span::before {
+.referalWrapper .emailInputWrapper .success::before {
   position: relative;
   content: url("./assets/checkMark.svg");
+  width: 32px;
+  height: 32px;
+  top: 10px;
+  display: inline-block;
+  margin-right: 8px;
+}
+.referalWrapper .emailInputWrapper .fail::before {
+  position: relative;
+  content: url("./assets/Flat_cross_icon.svg");
   width: 32px;
   height: 32px;
   top: 10px;
@@ -173,6 +183,9 @@
 .referalWrapper .emailInputWrapper input,
 .referalWrapper .emailInputWrapper span {
   margin-bottom: 17px;
+}
+.referalWrapper .emailInputWrapper .copyWrapper button {
+  width: 100%;
 }
 .referalWrapper .bottomWrapper span {
   text-align: left;
@@ -208,7 +221,7 @@
   text-align: center;
   font: normal normal normal 24px/32px scriptoramamarkdownjfregular;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
   text-transform: uppercase;
   margin-top: 16px;
@@ -218,7 +231,7 @@
   text-align: center;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
   margin: 24px 32px;
   margin-bottom: 0;
@@ -233,7 +246,7 @@
 }
 .getAppWrapper .storeWrapper {
   display: flex;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 16px;
   padding: 15px 24px 16px;
   width: 100%;
@@ -283,7 +296,7 @@
   text-align: left;
   font: normal normal bold 16px/24px Noto Sans;
   letter-spacing: 1.28px;
-  color: #1f343e;
+  color: #1F343E;
   text-transform: uppercase;
   opacity: 1;
   margin-bottom: 23px;
@@ -292,7 +305,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
 }
 .footerWrapper .menuWrapper .linkWrapper {
@@ -310,7 +323,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
 }
 .footerWrapper .contactWrapper {
@@ -320,7 +333,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: #1F343E;
   opacity: 1;
 }
 .footerWrapper .contactWrapper span::before {
@@ -338,7 +351,7 @@
 .footerWrapper .socialWrapper ul li img {
   width: 32px;
   height: 32px;
-  border: 1px solid #1f343e;
+  border: 1px solid #1F343E;
   border-radius: 8px;
   opacity: 1;
 }
@@ -369,7 +382,7 @@
   }
   .mainWrapper .referalWrapper {
     width: 50%;
-    margin: 5% 4% 7% 20%;
+    margin: 5% 4% 7% 12%;
     justify-content: initial;
   }
   .mainWrapper .referalWrapper h1 {
@@ -378,6 +391,18 @@
   }
   .mainWrapper .referalWrapper button {
     margin-bottom: 153px;
+  }
+  .mainWrapper .referalWrapper .copyWrapper {
+    display: flex;
+  }
+  .mainWrapper .referalWrapper .copyWrapper input {
+    width: 80%;
+    border-radius: 8px 0px 0px 8px;
+  }
+  .mainWrapper .referalWrapper .copyWrapper button {
+    width: 20%;
+    border: 1px solid #1F343E;
+    border-radius: 0px 8px 8px 0px;
   }
   .mainWrapper .stepsWrapper {
     width: 50%;
@@ -443,7 +468,8 @@
   .footerWrapper .columnOne {
     width: 25%;
   }
-  .footerWrapper .columnOne p, .footerWrapper .columnOne li {
+  .footerWrapper .columnOne p,
+.footerWrapper .columnOne li {
     font: normal normal normal 16px/24px Noto Sans;
   }
   .footerWrapper .columnOne h2 {
@@ -459,5 +485,10 @@
   }
   .footerWrapper .watermarkWrapper span {
     position: initial;
+  }
+}
+@media only screen and (min-width: 1488px) {
+  .mainWrapper .referalWrapper {
+    margin: 5% 4% 7% 20%;
   }
 }/*# sourceMappingURL=App.css.map */

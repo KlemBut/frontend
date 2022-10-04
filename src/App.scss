@@ -1,3 +1,4 @@
+@import-normalize;
 @import url("http://fonts.cdnfonts.com/css/gadugi");
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Noto+Sans&display=swap");
 @import url("https://www.dafontfree.net/data/1/s/1195/design.jasonwalcott.Scriptorama Markdown JF.ttf");
@@ -12,7 +13,7 @@
   font-style: normal;
 }
 
-$border-dark: #1f343e;
+$border-dark: #1F343E;
 
 *,
 *::before,
@@ -24,7 +25,6 @@ $border-dark: #1f343e;
   background-color: #f8cc5d;
 }
 .group12 {
-  // background-image: url('./assets/Group12.svg');
   width: 125px;
   height: 32px;
   margin-left: 16px;
@@ -37,6 +37,7 @@ $border-dark: #1f343e;
   align-items: center;
   min-width: 375px;
   height: 56px;
+  border-bottom: 1px solid $border-dark;;
   ul {
     list-style: none;
     display: flex;
@@ -46,7 +47,7 @@ $border-dark: #1f343e;
     top: 5px;
     padding: 0;
     background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #1f343e;
+    border: 1px solid $border-dark;
     li {
       margin-left: 16px;
       a {
@@ -55,7 +56,7 @@ $border-dark: #1f343e;
         text-decoration: none;
         color: $border-dark;
       }
-      a:hover{
+      a:hover {
         color: #4eb3e3;
       }
       a:active {
@@ -121,22 +122,22 @@ $border-dark: #1f343e;
     display: flex;
     flex-direction: column;
 
+    input {
+      text-align: left;
+      font: normal normal normal 16px/20px Noto Sans;
+      letter-spacing: 0px;
+      color: #6d7a80;
+      opacity: 1;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid $border-dark;
+      border-radius: 8px;
+      height: 56px;
+      opacity: 1;
+      padding-left: 48px;
+      width: 100%;
+    }
     label {
       position: relative;
-      input {
-        text-align: left;
-        font: normal normal normal 16px/20px Noto Sans;
-        letter-spacing: 0px;
-        color: #6d7a80;
-        opacity: 1;
-        background: #ffffff 0% 0% no-repeat padding-box;
-        border: 1px solid $border-dark;
-        border-radius: 8px;
-        height: 56px;
-        opacity: 1;
-        padding-left: 48px;
-        width: 100%;
-      }
     }
     label::before {
       content: "";
@@ -149,7 +150,7 @@ $border-dark: #1f343e;
     }
     button {
       background: #4eb3e3 0% 0% no-repeat padding-box;
-      border: 1px solid #1f343e;
+      border: 1px solid $border-dark;
       border-radius: 8px;
       opacity: 1;
       height: 56px;
@@ -162,16 +163,24 @@ $border-dark: #1f343e;
       margin-bottom: 71px;
     }
     span {
-      display: none;
       text-align: left;
       font: normal normal bold 16px/24px Noto Sans;
       letter-spacing: 0px;
-      color: #1f343e;
+      color: $border-dark;
       opacity: 1;
     }
-    span::before {
+    .success::before {
       position: relative;
       content: url("./assets/checkMark.svg");
+      width: 32px;
+      height: 32px;
+      top: 10px;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    .fail::before {
+      position: relative;
+      content: url("./assets/Flat_cross_icon.svg");
       width: 32px;
       height: 32px;
       top: 10px;
@@ -181,6 +190,11 @@ $border-dark: #1f343e;
     input,
     span {
       margin-bottom: 17px;
+    }
+    .copyWrapper {
+      button {
+        width: 100%;
+      }
     }
   }
   .bottomWrapper {
@@ -218,7 +232,7 @@ $border-dark: #1f343e;
       text-align: center;
       font: normal normal normal 24px/32px scriptoramamarkdownjfregular;
       letter-spacing: 0px;
-      color: #1f343e;
+      color: $border-dark;
       opacity: 1;
       text-transform: uppercase;
       margin-top: 16px;
@@ -228,7 +242,7 @@ $border-dark: #1f343e;
       text-align: center;
       font: normal normal normal 16px/24px Noto Sans;
       letter-spacing: 0px;
-      color: #1f343e;
+      color: $border-dark;
       opacity: 1;
       margin: 24px 32px;
       margin-bottom: 0;
@@ -273,7 +287,7 @@ $border-dark: #1f343e;
       }
     }
   }
-  .storeWrapper:hover{
+  .storeWrapper:hover {
     cursor: pointer;
   }
   .reviewWrapper {
@@ -355,7 +369,7 @@ $border-dark: #1f343e;
         img {
           width: 32px;
           height: 32px;
-          border: 1px solid #1f343e;
+          border: 1px solid $border-dark;
           border-radius: 8px;
           opacity: 1;
         }
@@ -367,7 +381,7 @@ $border-dark: #1f343e;
     position: relative;
     bottom: -32rem;
     margin: 48px 13px 16px 0px;
-    span{
+    span {
       position: absolute;
       bottom: 16px;
       text-align: left;
@@ -390,7 +404,7 @@ $border-dark: #1f343e;
     display: flex;
     .referalWrapper {
       width: 50%;
-      margin: 5% 4% 7% 20%;
+      margin: 5% 4% 7% 12%;
       justify-content: initial;
       h1 {
         text-align: left;
@@ -398,6 +412,18 @@ $border-dark: #1f343e;
       }
       button {
         margin-bottom: 153px;
+      }
+      .copyWrapper {
+        display: flex;
+        input {
+          width: 80%;
+          border-radius: 8px 0px 0px 8px;
+        }
+        button {
+          width: 20%;
+          border: 1px solid $border-dark;
+          border-radius: 0px 8px 8px 0px;
+        }
       }
     }
     .stepsWrapper {
@@ -447,37 +473,37 @@ $border-dark: #1f343e;
       h2 {
         font: normal normal bold 20px/16px Gadugi;
       }
-      span{
+      span {
         font: normal normal normal 20px/24px Noto Sans;
-        position:relative;
-        bottom:14px
+        position: relative;
+        bottom: 14px;
       }
     }
   }
 
-  .footerWrapper{
+  .footerWrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap:120px;
-    
-    .columnOne{
-    width: 25%;
-      
-      p, li {
+    gap: 120px;
+
+    .columnOne {
+      width: 25%;
+
+      p,
+      li {
         font: normal normal normal 16px/24px Noto Sans;
       }
-      h2{
+      h2 {
         font: normal normal bold 20px/24px Noto Sans;
       }
-      
     }
     .columnTwo {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-    .watermarkWrapper{
+    .watermarkWrapper {
       position: initial;
       span {
         position: initial;
@@ -486,3 +512,10 @@ $border-dark: #1f343e;
   }
 }
 
+@media only screen and (min-width: 1488px){
+  .mainWrapper{
+    .referalWrapper {
+      margin: 5% 4% 7% 20%
+    }
+  }
+}
