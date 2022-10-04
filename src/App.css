@@ -16,6 +16,7 @@
 
 .App {
   background-color: #f8cc5d;
+  min-width: 375px;
 }
 
 .group12 {
@@ -371,6 +372,9 @@
 }
 
 @media only screen and (min-width: 767px) {
+  .App {
+    min-width: 1290px;
+  }
   .hamburger {
     display: none;
   }

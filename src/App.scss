@@ -23,6 +23,7 @@ $border-dark: #1F343E;
 
 .App {
   background-color: #f8cc5d;
+  min-width: 375px;
 }
 .group12 {
   width: 125px;
@@ -394,6 +395,9 @@ $border-dark: #1F343E;
 }
 
 @media only screen and (min-width: 767px) {
+  .App{
+    min-width: 1290px;
+  }
   .hamburger {
     display: none;
   }
