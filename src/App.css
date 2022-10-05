@@ -188,6 +188,11 @@
 .referalWrapper .emailInputWrapper .copyWrapper button {
   width: 100%;
 }
+.referalWrapper .bottomWrapper {
+  height: 30%;
+  display: flex;
+  align-items: flex-end;
+}
 .referalWrapper .bottomWrapper span {
   text-align: left;
   font: normal normal normal 16px/32px Noto Sans;

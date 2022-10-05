@@ -199,6 +199,9 @@ $border-dark: #1F343E;
     }
   }
   .bottomWrapper {
+    height: 30%;
+    display: flex;
+    align-items: flex-end;
     span {
       text-align: left;
       font: normal normal normal 16px/32px Noto Sans;
@@ -522,4 +525,6 @@ $border-dark: #1F343E;
       margin: 5% 4% 7% 20%
     }
   }
+
+
 }
